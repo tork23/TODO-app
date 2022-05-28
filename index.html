@@ -2,19 +2,78 @@
 <html lang="en">
 <head>
     <title>To-Do-App</title>
+    <script src="https://kit.fontawesome.com/e5daa1c5c0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="./style.css">
 </head>
 <body>
-    <div id="to-do-container">
-        <div id="container-one">
-
+    <div id="todo-container">
+        <!-- Header -->
+    <header>
+        <div id="heading-box">
+            <h1>Todo App</h1>
         </div>
-        <div id="container-2">
+        <!-- Form -->
+        <form id="new-task-form">
+            <i class="fa-solid fa-list" id="list-icon"></i> 
 
-        </div>
-        <div id="container-3">
+            <input 
+                type="text"
+                id="new-task-input"
+                placeholder="...Create a task"
+                required>
+    
+            <i class="fa-regular fa-plus" id="add-icon"></i>
             
+        </form>
+       <hr>
+    </header>
+    <!-- Tasks list -->
+    <main>
+        <section class="task-list">
+            <div id="tasks">
+                <!-- <div class="task">
+                    <div class ="checkbox">
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    
+                    <div class="content">   
+                        <input 
+                            type="text"
+                            class="text"
+                            value="My shiny task"
+                            readonly/>
+                    </div>
+                    <div class="actions">
+                        <button class="mark-as-complete">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <button class="edit">
+                           Edit
+                        </button>
+                        <button class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <hr>
+        
+    </main>
+    <footer>
+        <div id="footer">
+            <div>
+                <h4><span id = "task-count">0</span> tasks left</h4>
+            </div>
+            <div class="filters">
+                <span>All</span>
+                <span>Completed</span>
+                <span>Uncompleted</span>
+            </div>
         </div>
+    </footer>    
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
