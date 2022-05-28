@@ -89,6 +89,7 @@ function addTodo(e){
 		if (editButton.innerText.toLowerCase() == "edit") {
 			editButton.innerText = "Save";
 			taskInputElement.removeAttribute("readonly");
+			taskInputElement.style.color = "black";
 			taskInputElement.focus();
 		} else {
 			editButton.innerText = "Edit";
